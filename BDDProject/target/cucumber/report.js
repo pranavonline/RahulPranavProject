@@ -1,33 +1,33 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("MyFirstFeature.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/java/Rahul/BDDProject/Resources/MyFirstFeature.feature");
 formatter.feature({
-  "line": 1,
-  "name": "My First feature",
-  "description": "",
   "id": "my-first-feature",
-  "keyword": "Feature"
+  "description": "",
+  "name": "My First feature",
+  "keyword": "Feature",
+  "line": 1
 });
 formatter.scenario({
-  "line": 3,
-  "name": "Search functionality",
-  "description": "",
   "id": "my-first-feature;search-functionality",
-  "type": "scenario",
-  "keyword": "Scenario"
+  "description": "",
+  "name": "Search functionality",
+  "keyword": "Scenario",
+  "line": 3,
+  "type": "scenario"
 });
 formatter.step({
-  "line": 4,
   "name": "I am on \"https://www.google.com\" page",
-  "keyword": "Given "
+  "keyword": "Given ",
+  "line": 4
 });
 formatter.step({
-  "line": 5,
   "name": "I search for \"Testing\" keyword",
-  "keyword": "When "
+  "keyword": "When ",
+  "line": 5
 });
 formatter.step({
-  "line": 6,
   "name": "I landed to search result page for \"Testing\" keyword",
-  "keyword": "Then "
+  "keyword": "Then ",
+  "line": 6
 });
 formatter.match({
   "arguments": [
@@ -39,7 +39,7 @@ formatter.match({
   "location": "MyFirstStepDefinition.navigateTo(String)"
 });
 formatter.result({
-  "duration": 10105010487,
+  "duration": 5801950000,
   "status": "passed"
 });
 formatter.match({
@@ -52,7 +52,7 @@ formatter.match({
   "location": "MyFirstStepDefinition.i_search_for_keyword(String)"
 });
 formatter.result({
-  "duration": 633779399,
+  "duration": 350488000,
   "status": "passed"
 });
 formatter.match({
@@ -65,7 +65,7 @@ formatter.match({
   "location": "MyFirstStepDefinition.i_landed_to_search_result_page_for_keyword(String)"
 });
 formatter.result({
-  "duration": 134403643,
+  "duration": 95774000,
   "status": "passed"
 });
 });
